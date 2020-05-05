@@ -1,0 +1,1 @@
+export const remCalc = (px: number, base = 16) => px / base;
