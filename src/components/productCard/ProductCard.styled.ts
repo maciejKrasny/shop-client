@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   position: relative;
   width: 20rem;
   overflow: hidden;
-  &:last-child {
+  &:nth-child(3) {    
     display: flex;
     justify-self: flex-end;
   }

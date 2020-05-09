@@ -12,7 +12,6 @@ function chunkArray(myArray: any[], chunkSize: number) {
 
   for (index = 0; index < arrayLength; index += chunkSize) {
     const chuck = myArray.slice(index, index + chunkSize);
-    // Do something if you want with the group
     tempArray.push(chuck);
   }
 
@@ -26,10 +25,9 @@ const Products: React.FC<{}> = () => {
     dispatch(shopActions.loadProducts());
   }, [dispatch]);
 
-  const upproducts = [...products, ...products, ...products, ...products, ...products, ...products, ...products, ...products];
-  const chunkProducts = chunkArray(upproducts, 3);
+  const chunkProducts = chunkArray(products, 3);
   const productsElement = chunkProducts.map((chunk: ProductProps[]) => (
-    <ProductsRow>
+    <ProductsRow key={chunk[0].id}>
       {chunk.map((product: ProductProps) => (
         <ProductCard
           key={product.id}
@@ -45,8 +43,7 @@ const Products: React.FC<{}> = () => {
     <Content>
       {productsElement}
     </Content>
-  )
-    ;
+  );
 };
 
 export default Products;

@@ -11,7 +11,6 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import styled from "styled-components";
 
-
 const rootReducer = combineReducers({
   shop: ShopReducer,
 })
@@ -24,6 +23,7 @@ const PageWrapper = styled.div`
 `;
 
 function App() {
+
   return (
     <Provider store={store}>
       <PageWrapper>

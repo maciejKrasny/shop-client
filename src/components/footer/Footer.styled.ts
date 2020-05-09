@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { GridContainer } from "../../components/grid/GridContainer.styled";
 
 export const StyledFooter = styled.footer`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 2.2rem;
   border-top: 1px solid #CCCCCC;
 `;
 

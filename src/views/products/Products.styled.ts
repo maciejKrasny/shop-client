@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { GridContainer } from "../../components/grid/GridContainer.styled";
 import { Link } from "react-router-dom";
+import { remCalc } from "../../utlis/remCalc";
 
 export const Logo = styled(Link)`
-  font-size: 42px;
+  font-size: ${remCalc(42)}rem;
   text-decoration: none;
   color: white;
   &:hover {
@@ -14,7 +15,7 @@ export const Logo = styled(Link)`
 
 export const SvgContainer = styled.div`
   position: relative;
-  width: 42px;
+  width: ${remCalc(42)}rem;
   margin-top: 0.5rem;
   margin-right: 1rem;
   color: white;
@@ -27,16 +28,16 @@ export const SvgContainer = styled.div`
 
 export const CartProductsNumber = styled.div`
   position: absolute;
-  top: -14px;
-  right: -14px;
+  top: -${remCalc(14)}rem;
+  right: -${remCalc(14)}rem;
   background-color: #A13E3E;
   color: white;
-  border-radius: 18px;
-  padding: 0 8px;
+  border-radius: ${remCalc(18)}rem;
+  padding: 0 0.5rem;
 `;
 
 export const Content = styled(GridContainer)`
-  padding: 1rem 1rem 20rem 1rem;
+  padding: 1rem;
 `;
 
 export const ProductsRow = styled.div`
