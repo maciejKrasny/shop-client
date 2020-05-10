@@ -53,8 +53,14 @@ const Cart: React.FC = () => {
   const dispatch = useDispatch();
 
   const onSubmit = (data: any, e: any) => {
+    const products: any[] = [];
+    cartProducts.forEach((product) => {
+      for (let i = 0; i < product.amount; i++) {
+        products.push(product);
+      }
+    });
     const body = {
-      products: cartProducts,
+      products: products,
       user: {
         name: data.name,
         surname: data.surname,
