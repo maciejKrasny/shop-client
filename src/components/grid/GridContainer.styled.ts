@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import styled, { css } from 'styled-components';
-import rwd, { Breakpoint } from '../../utlis/rwd';
+import rwd, { Breakpoint } from '../../utils/style/rwd';
 
 interface GridContainerProps {
   fullWidth?: boolean;

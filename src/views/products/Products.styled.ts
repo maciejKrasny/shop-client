@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GridContainer } from "../../components/grid/GridContainer.styled";
 import { Link } from "react-router-dom";
-import { remCalc } from "../../utlis/remCalc";
+import { remCalc } from "../../utils/style/remCalc";
 
 export const Logo = styled(Link)`
   font-size: ${remCalc(42)}rem;
