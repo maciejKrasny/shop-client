@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Card as BootstrapCard } from "react-bootstrap";
-import { hexToRGB } from "../../utlis/rgba";
+import { hexToRGB } from "../../utils/style/rgba";
 import { Link as ReactLink } from "react-router-dom";
 
 

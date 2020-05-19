@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Card as BootstrapCard } from "react-bootstrap";
-import { remCalc } from "../../utlis/remCalc";
+import { remCalc } from "../../utils/style/remCalc";
 
 export const Card = styled(BootstrapCard)`
   display: flex;

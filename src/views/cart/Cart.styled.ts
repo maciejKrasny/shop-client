@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { GridContainer } from "../../components/grid/GridContainer.styled";
-import { remCalc } from "../../utlis/remCalc";
-import { hexToRGB } from "../../utlis/rgba";
+import { remCalc } from "../../utils/style/remCalc";
+import { hexToRGB } from "../../utils/style/rgba";
 import { Link } from 'react-router-dom';
 
 export const Container = styled(GridContainer)`
